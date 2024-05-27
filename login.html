@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="text-center"
+        style=" display: flex;  justify-content: center;  align-items: center;  height: 100vh; background-color:aliceblue;">
+        <div style=" background-color: white;   border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;
+               border-radius: 10px;">
+            <div>
+                <img style="height: 70px;margin-top: 15px; "src="https://i.ibb.co/DbWcjHz/logo-login-1.jpg" alt="">
+            </div> 
+           <div style="padding: 15px;">
+            <p style="font-size: 14px; margin-top: 10px; color: #333; font-weight: bold;">Login to Explore the art of
+                <span style="color: darkblue;">AI-driven</span> Dialogue
+            </p>
+
+            <button class="btn  md-2" style="background-color:#063970;" >
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" width="30" />  <a href="{% url 'social:begin' 'google-oauth2' %}" style="text-decoration: none; color: white;">
+                    Login With Google
+                </a>
+            </button>
+           </div>
+
+           <div>
+
+            
+           </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
